@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">トピックス 2</string>
+    <string name="app_current_lang_name">日本</string>
+    <string name="main_translate_btn">翻訳</string>
+</resources>
