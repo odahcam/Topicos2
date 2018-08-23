@@ -10,22 +10,38 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        attachButtonOnClickListener();
+
+        attachButtonOnClickListener()
+        attachButtonListViewOnClickListener()
     }
+
 
     fun openTranslateActivity() {
         val intent = Intent(this, TranslateActivity::class.java)
         startActivity(intent)
     }
 
+    fun openListViewActivity() {
+        val intent = Intent(this, ListViewActivity::class.java)
+        startActivity(intent)
+    }
+
     fun attachButtonOnClickListener() {
 
-        val button = findViewById<Button>(R.id.button)
+        val button = findViewById<Button>(R.id.buttonTranslate)
 
         button.setOnClickListener {
             openTranslateActivity()
         }
     }
 
-}
+    fun attachButtonListViewOnClickListener() {
 
+        val button = findViewById<Button>(R.id.buttonListView)
+
+        button.setOnClickListener {
+            openListViewActivity()
+        }
+    }
+
+}

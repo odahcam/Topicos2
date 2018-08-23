@@ -2,5 +2,7 @@
     <string name="app_name">Topics 2</string>
     <string name="app_current_lang_name">English</string>
     <string name="main_translate_btn">Translation</string>
+    <string name="main_listview_btn">List View</string>
+    <string name="main_restaurantes_btn">Restaurantes</string>
 </resources>
 
