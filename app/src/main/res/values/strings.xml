@@ -3,6 +3,13 @@
     <string name="app_current_lang_name">English</string>
     <string name="main_translate_btn">Translation</string>
     <string name="main_listview_btn">List View</string>
-    <string name="main_restaurantes_btn">Restaurantes</string>
+    <string name="main_parkings_btn">Parkings</string>
+    <string name="main_restaurantes_btn">Restaurants</string>
+    <string name="restaurant_details_has_choosen_the">has choosen the</string>
+    <string name="restaurant_details_restaurant_with_no_name">Restaurant with no name</string>
+    <string name="restaurant_details_unknown_user">Unknown user</string>
+    <string name="parking_details_name">Name</string>
+    <string name="parking_details_capacity">Capacity</string>
+    <string name="parking_details_rating">Rating</string>
 </resources>
 

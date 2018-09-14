@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".ParkingDetailsActivity" />
+        <activity android:name=".ParkingListActivity" />
+        <activity android:name=".RestaurantDetailsActivity" />
+        <activity android:name=".RestaurantListActivity" />
+        <activity android:name=".TranslateActivity" />
     </application>
 
 </manifest>

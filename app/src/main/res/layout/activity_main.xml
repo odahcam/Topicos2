@@ -11,21 +11,24 @@
         android:id="@+id/buttonTranslate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:text="@string/main_translate_btn" />
+        android:text="@string/main_translate_btn" />
 
     <Button
         android:id="@+id/buttonListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:text="@string/main_listview_btn" />
+        android:text="@string/main_listview_btn" />
 
     <Button
         android:id="@+id/buttonRestaurantes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:text="@string/main_restaurantes_btn" />
+        android:text="@string/main_restaurantes_btn" />
+
+    <Button
+        android:id="@+id/buttonParkings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_parkings_btn" />
 
 </LinearLayout>

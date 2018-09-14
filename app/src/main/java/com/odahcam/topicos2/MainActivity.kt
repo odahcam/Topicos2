@@ -4,44 +4,28 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        attachButtonOnClickListener()
-        attachButtonListViewOnClickListener()
+        btnActivityOpener(findViewById(R.id.buttonTranslate), TranslateActivity::class.java)
+        btnActivityOpener(findViewById(R.id.buttonListView), ListViewActivity::class.java)
+        btnActivityOpener(findViewById(R.id.buttonRestaurantes), RestaurantListActivity::class.java)
+        btnActivityOpener(findViewById(R.id.buttonParkings), ParkingListActivity::class.java)
     }
 
-
-    fun openTranslateActivity() {
-        val intent = Intent(this, TranslateActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openListViewActivity() {
-        val intent = Intent(this, ListViewActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun attachButtonOnClickListener() {
-
-        val button = findViewById<Button>(R.id.buttonTranslate)
-
-        button.setOnClickListener {
-            openTranslateActivity()
+    private fun <TActivity> btnActivityOpener(btn: Button, activityClass: Class<TActivity>) {
+        btn.setOnClickListener {
+            openActivity(activityClass)
         }
     }
 
-    fun attachButtonListViewOnClickListener() {
-
-        val button = findViewById<Button>(R.id.buttonListView)
-
-        button.setOnClickListener {
-            openListViewActivity()
-        }
+    private fun <TActivity> openActivity(activityClass: Class<TActivity>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 
 }
+
